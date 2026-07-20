@@ -37,6 +37,11 @@ The user provides a command like: `process recipe link <URL>`
     - If the category does not exist: Create a new category section with the header and the first recipe link.
 - **Layout**: Maintain the "Kenna's recipes" title and "These are the recipes I use" subtitle at the top.
 
+### 4. Deployment & Backup
+- Once the local files are updated, push the changes to the GitHub repository (`fificito/kennas-recipes`).
+- For a comprehensive backup of the site AND the agent's skills, follow the `hermes-state-backup` skill.
+- Use `git add .`, `git commit -m "Add new recipe: [Recipe Title]"`, and `git push` to ensure the site is live.
+
 ## Pitfalls & Tips
 - **Content Noise**: Recipe blogs often have long intros. Ensure only the actual recipe data is extracted.
 - **URL Slugs**: Handle special characters in titles to ensure valid filenames.
